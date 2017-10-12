@@ -86,11 +86,6 @@ public class Shopping {
         public void checkOut(){
             HomePage hp = PageFactory.initElements(webDriver,HomePage.class);
             hp.clickDress();
-            try {
-                Thread.sleep(10000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
             webDriver.findElement(By.cssSelector("#add_to_cart > button")).click();
             //DressPopUp dpop = PageFactory.initElements(webDriver,DressPopUp.class);
             //dpop.clickcart();
